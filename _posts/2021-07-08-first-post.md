@@ -7,7 +7,12 @@ categories:
 tage: 
     - Blog
 last_modified_at: 2021-07-08t12:58-15:00
+comments: true
+toc: true
+toc_sticky: true
 ---
+
+# 개오바야
 
 R밥창고 깃 블로그 첫 게시물
 
@@ -17,3 +22,9 @@ R밥창고 깃 블로그 첫 게시물
 
 해당 본문의 제목: {{ page.title }}  
 마지막으로 수정된 시간: {{ page.last_modified_at }}
+
+
+# 이건 아니지
+
+개오바ㅃㅃㅃ
+
