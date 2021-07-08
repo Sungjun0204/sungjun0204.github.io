@@ -105,11 +105,11 @@ author:
   avatar           : "/assets/images/me.jpg"
   bio              : "공부를 해 봅시다"
   location         : "South Korea"
-  email            : 
+  email            : "kxt1234.max@email.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "kxt1234.max@email.com"
+      url: 
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
