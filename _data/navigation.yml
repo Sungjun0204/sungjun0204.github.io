@@ -1,11 +1,12 @@
 # main links
 main:
-  - title: "블로그 방문하기"
-    url: https://sungjun0204.github.io
   - title: "About"
     url: /about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Study"
+    url: /study/
+    submain:
+    - title: Actuator
+      url: /actuator/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
