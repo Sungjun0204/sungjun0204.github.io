@@ -2,11 +2,10 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Categories"
+    url: /categories/
   - title: "Study"
-    url: /study/
-    submain:
-    - title: Actuator
-      url: /actuator/
+    url: /categories/study/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

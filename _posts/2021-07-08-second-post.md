@@ -7,6 +7,7 @@ categories:
 tage: 
     - Study
 last_modified_at: 2021-07-09t12:58-15:00
+comments: true
 ---
 
 R밥창고 깃 블로그 두번째 게시물
