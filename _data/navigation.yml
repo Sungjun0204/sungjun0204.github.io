@@ -6,6 +6,11 @@ main:
     url: /categories/
   - title: "Study"
     url: /categories/study/
+  - title: "Learn"
+    url: /categories/learn/
+    submain: 
+      - title: "Actuator"
+        url: /categories/learn/actuator
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
