@@ -135,7 +135,7 @@ FFT의 계산을 확인하기 위해서는 변환할 신호가 있어야 하는�
 최종 생성된 신호에 FFT를 적용시키면 다음과 같은 그래프가 그려진다. 
 
 <center>
-<img src="\assets\images\2021-07-10-robot-laboratory-3\img6.png" width="90%" height="90%">
+<img src="\assets\images\2021-07-10-robot-laboratory-3\img6.png" width="80%" height="80%">
 </center>
 
 <br/>
