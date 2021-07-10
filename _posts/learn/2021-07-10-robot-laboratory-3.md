@@ -135,9 +135,14 @@ FFT의 계산을 확인하기 위해서는 변환할 신호가 있어야 하는�
 최종 생성된 신호에 FFT를 적용시키면 다음과 같은 그래프가 그려진다. 
 
 <center>
-<img src="\assets\images\2021-07-10-robot-laboratory-3\img6.png" width="50%" height="50%">
+<img src="\assets\images\2021-07-10-robot-laboratory-3\img6.png">
 </center>
 
 <br/>
 각 주파수별로 분해가 되어서 Frequency-Domain에 표시가 되는 것을 확인할 수 있다. 
 White noise는 FFT를 진행했을 때 Frequency-Domain에서는 낮게 깔리는 형태를 보이고 있는데, 이러한 노이즈를 "전자파 노이즈"라고 한다. 
+
+<br/>
+<br/>
+<br/>
+<br/>
