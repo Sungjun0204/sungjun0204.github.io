@@ -3,7 +3,7 @@ title: "[Robot Laboratory 3]Fast Fourier Transform"
 excerpt: "Let's Talk About Filter"
 
 categories: 
-    - Robot-Laboratory-3
+    - Robot Laboratory 3
 tage: 
     - Robot Laboratory 3
     - Filter
