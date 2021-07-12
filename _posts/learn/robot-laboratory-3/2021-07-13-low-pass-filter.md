@@ -29,7 +29,7 @@ LPF도 마찬가지지만, 필터를 설계할 때에는 "차단 주파수(Cutof
 아래와 같은 1차 RC 회로를 키르히호프 법칙으로 시정수를 구한다.
 
 <center>
-<img src="\assets\images\learn\robot-laboratory-3\2021-07-13-robot-laboratory-3\img1.png" width="70%" height="70%">
+<img src="\assets\images\learn\robot-laboratory-3\2021-07-13-robot-laboratory-3\img1.PNG" width="70%" height="70%">
 </center>
 
 <br>
