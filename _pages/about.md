@@ -4,10 +4,45 @@ permalink: /about/
 layout: single
 ---
 
-## devinlife.github.io 블로그
+<center>
+<span style=
+"font-size:170%;
+font-weight:bold">
+김성준
+</span>
+</center>
 
-이 블로그는 GitHub Pages 블로그 서비스인 github.io를 같이 만들어보는 샘플 블로그이다.
+---
+> <center>MAJOR : ROBOT ENGINEERING</center>
+> <center>Kwangwoon University</center>
+> <center>Kwangwoon-ro, Nowon-gu, Seoul, Republic of Korea</center>
+> <center>kxt1234.max@gmail.com</center>
 
-진짜 블로그인 <https://sungjun0204.com>을 방문해보자.
-이 곳에서 이 샘플 블로그를 같이 만들어보는 GitHub Pages 블로그 따라하기 시리즈의
-모든 글을 볼 수 있다.
+<br/>
+<br/>
+
+## Education
+> Mar.2016 ~ Feb.2023 광운대학교
+>
+> 로봇학부 (DIVISION OF ROBOTICS)
+
+
+<br/>
+<br/>
+
+## Personal Project
+* **Cocktail Machine**
+
+  펌프모터와 MFC를 이용한 음료수 배합기  (Baverage Mixer Machine using Pump Motor and MFC) 
+
+* **MI-ARM(Motion Imitation by Artificial Rubber Muscles)**
+
+  인공근육 PAM을 이용한 팔 근육 로봇 (Arm Muscles Robot with PAM(Pneumatic Artificial Muscles))
+
+<br/>
+<br/>
+
+## Skills and Certifications
+* Languages of Programming: C/C++/MATLAB
+
+* Certifications : JLPT N2
