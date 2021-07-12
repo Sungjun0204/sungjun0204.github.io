@@ -1,7 +1,9 @@
 ---
 title: "[Robot Laboratory 3]Fast Fourier Transform"
-excerpt: "Let's Talk About Filter"
-
+excerpt: "Let's Talk About FFT"
+header: 
+    teaser: \assets\images\2021-07-10-robot-laboratory-3\img2.png
+    
 categories: 
     - Robot Laboratory 3
 tage: 
