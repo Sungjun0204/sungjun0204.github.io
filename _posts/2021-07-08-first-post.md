@@ -13,13 +13,11 @@ toc_sticky: true
 use_math: true
 ---
 
-# 개오바야
+# 안녕하세요
 
 R밥창고 깃 블로그 첫 게시물
 
-테스트  
-테스트  
-테스트  
+  
 
 해당 본문의 제목: {{ page.title }}  
 마지막으로 수정된 시간: {{ page.last_modified_at }}
