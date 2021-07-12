@@ -1,7 +1,7 @@
 ---
 title: "Robot Kinematics"
 permalink: /categories/learn/robot-kinematics
-layout: learn
+layout: category
 author_profile: true
 taxonomy: Robot Kinematics
 ---

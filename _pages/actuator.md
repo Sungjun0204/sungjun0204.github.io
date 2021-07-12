@@ -1,7 +1,7 @@
 ---
 title: "Actuator"
 permalink: /categories/learn/actuator
-layout: learn
+layout: category
 author_profile: true
 taxonomy: Actuator
 ---
