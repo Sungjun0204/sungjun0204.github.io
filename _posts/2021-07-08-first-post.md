@@ -1,6 +1,8 @@
 ---
 title: "Github Page 첫 게시물"
 excerpt: "깃허브 블로그 시작하기"
+header: 
+    teaser: \assets\images\me.png
 
 categories: 
     - Blog
