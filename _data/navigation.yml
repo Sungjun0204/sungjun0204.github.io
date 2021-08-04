@@ -10,7 +10,12 @@ main:
     url: /categories/learn/
     submain: 
       - title: "Actuator"
-        url: /categories/learn/actuator
+        url: /categories/learn/actuator/
+  - title: "Projects"
+    url: /categories/projects/
+    submain:
+       - title: "MI-ARM"
+         url: /categories/projects/mi-arm/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
