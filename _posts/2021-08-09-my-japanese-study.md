@@ -38,7 +38,7 @@ use_math: true
 <br/>
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img1.JPG" width="50%" height="50%">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img1.jpg" width="50%" height="50%">
 </center>  
 
 <center>
@@ -58,7 +58,7 @@ color:gray">
 <br/>
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img2.JPG" width="50%" height="50%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img3.JPG" width="50%" height="50%">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img2.jpg" width="50%" height="50%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img3.jpg" width="50%" height="50%">
 </center>  
 
 <center>
@@ -84,7 +84,7 @@ color:gray">
 <br/>
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img4.JPG" width="50%" height="50%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img5.JPG" width="50%" height="50%">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img4.jpg" width="50%" height="50%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img5.jpg" width="50%" height="50%">
 </center>  
 
 <center>
@@ -102,7 +102,7 @@ color:gray">
 <br/>
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img6.JPG" width="50%" height="50%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img7.JPG" width="50%" height="50%">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img6.jpg" width="50%" height="50%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img7.jpg" width="50%" height="50%">
 </center>  
 
 <center>
@@ -130,7 +130,7 @@ color:gray">
 <br/>
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img8.JPG" width="50%" height="50%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img9.JPG" width="50%" height="50%">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img8.jpg" width="50%" height="50%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img9.jpg" width="50%" height="50%">
 </center>  
 
 <center>
@@ -150,7 +150,7 @@ color:gray">
 <br/>
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img10.JPG" width="70%" height="70%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img11.JPG" width="30%" height="30%">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img10.jpg" width="70%" height="70%"><img src="\assets\images\blog\2021-08-09-my-japanese-study\img11.jpg" width="30%" height="30%">
 </center>  
 
 <center>
@@ -168,7 +168,7 @@ color:gray">
 <br/>
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img12.JPG" width="50%" height="50%">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img12.jpg" width="50%" height="50%">
 </center>
 
 <center>
@@ -182,7 +182,7 @@ color:gray">
 <br/>  
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img13.JPG" width="80%" height="80%">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img13.jpg" width="80%" height="80%">
 </center>
 
 <center>
@@ -204,7 +204,7 @@ color:gray">
 <br/>
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img14.JPG">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img14.jpg">
 </center>  
 
 <br/>  
@@ -216,7 +216,7 @@ color:gray">
 <br/>
 
 <center>
-<img src="\assets\images\blog\2021-08-09-my-japanese-study\img15.JPG">
+<img src="\assets\images\blog\2021-08-09-my-japanese-study\img15.jpg">
 </center>  
 
 <br/>  
