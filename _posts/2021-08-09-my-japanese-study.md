@@ -6,8 +6,9 @@ header:
 
 categories: 
     - Blog
-tage: 
+tags: 
     - Blog
+    - Japanese
 last_modified_at: 2021-08-09t12:58-15:00
 comments: true
 toc: true

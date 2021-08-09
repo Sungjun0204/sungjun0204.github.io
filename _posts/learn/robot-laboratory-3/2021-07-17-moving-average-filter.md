@@ -6,7 +6,7 @@ header:
 
 categories: 
     - Robot Laboratory 3
-tage: 
+tags: 
     - Robot Laboratory 3
     - Filter
     - Moving Average Filter
