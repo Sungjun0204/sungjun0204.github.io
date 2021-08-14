@@ -8,6 +8,9 @@ main:
     url: /tags/
   - title: "Study"
     url: /categories/study/
+    submain: 
+      - title: "Magnetic Robot Lab"
+        url: /categories/study/magnetic-robot-lab/
   - title: "Learn"
     url: /categories/learn/
     submain: 
