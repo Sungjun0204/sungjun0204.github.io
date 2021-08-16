@@ -51,7 +51,7 @@ Source: https://kr.misumi-ec.com/vona2/detail/110300263570/
 <br/>
 
 <center>
-<img src="\assets\images\study\magnetic-robot-lab\2021-08-14-first-paper-review\img1.jpg" width="70%" height="70%">
+<img src="\assets\images\study\magnetic-robot-lab\2021-08-14-first-paper-review\img1.JPG" width="70%" height="70%">
 </center>  
 
 <center>
@@ -88,14 +88,16 @@ color:gray">
 
 <center>
 <span style=
-"font-size:80%">
+"font-size:80%;
+color:gray">
 A1: 좌표계 이동에 관한 수식
 </span>
 </center>  
 
 <br/>
 
-여기서 $[x, y, z]$는 자기장 시스템에 고정되어 있는 "관성좌표계(Inertial Frame)"이고, $[\overline{x}, \overline{y}, \overline{z}]$는 영구 자석 코어에 고정되어 있는 "고정좌표계(Body Frame)"이다. 보통 고정좌표계는 해당 물체의 움직임을 직접적으로 알기 쉽고, 관성좌표계는 해당 물체가 속해 있는 공간을 기준으로 바라보는 것으로 생각할 수 있다. 왜 좌표계를 다르게 쓸까? 우리가 결국 알고 싶은 것은 "코일이 발생시키는 자기장"이 아닌, "자석 로봇의 자기장"을 알고 싶은 것이다. 따라서 해당 Magnetic Core에 고정되어 있는 고정좌표계로 이동을 하여 생각을 해야 한다. 따라서 고정좌표계로 이동하기 위해서 $\mathbf{T}_m$이라는 행렬을 곱하게 되며, 이는 Euler Angle Convention 을 이용해 X축 -> Y축 -> Z축 순서로 회전을 한 회전행렬이다.  
+여기서 $[x, y, z]$는 자기장 시스템에 고정되어 있는 "관성좌표계(Inertial Frame)"이고, $[\overline{x}, \overline{y}, \overline{z}]$는 영구 자석 코어에 고정되어 있는 "고정좌표계(Body Frame)"로 설명하고 있다. 보통 고정좌표계는 해당 물체의 움직임을 직접적으로 알기 쉽고, 관성좌표계는 해당 물체가 속해 있는 공간을 기준으로 바라보는 것으로 생각할 수 있으므로 이렇게 정한 것 같다.  
+그럼 왜 좌표계를 다르게 쓸까? 우리가 결국 알고 싶은 것은 "코일이 발생시키는 자기장"이 아닌, "자석 로봇의 자기장", 자석 로봇 그 자체가 어떻게 움직이는지를 알고 싶은 것이다. 따라서 해당 Magnetic Core에 고정되어 있는 고정좌표계로 이동을 하여 생각을 해야 한다. 따라서 고정좌표계로 이동하기 위해서 $\mathbf{T}_m$이라는 행렬을 곱하게 되며, 이는 Euler Angle Convention 을 이용해 X축 -> Y축 -> Z축 순서로 회전을 한 회전행렬이다.  
 
 <center>$$R_x R_y R_z (\theta_z, \theta_y, \theta_x) = I_3 R_x(\theta_z) R_y(\theta_y) R_z(\theta_x)$$</center>
 <center>$$=\begin{bmatrix}1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\end{bmatrix} \begin{bmatrix}1 & 0 & 0\\ 0 & cos \theta_x & -sin \theta_x \\ 0 & sin \theta_x & cos \theta_x\end{bmatrix} \begin{bmatrix}cos \theta_y & 0 & sin \theta_y\\ 0 & 1 & 0\\ -sin \theta_y & 0 & cod \theta_y\end{bmatrix} \begin{bmatrix}cos \theta_z & -sin \theta_z & 0\\ sin \theta_z & cos \theta_z & 0\\ 0 & 0 & 1\end{bmatrix}$$</center>
@@ -103,8 +105,9 @@ A1: 좌표계 이동에 관한 수식
 
 <center>
 <span style=
-"font-size:80%">
-A2: 관성에서 고정 좌표겨로 이동하기 위한 회전행렬  
+"font-size:80%;
+color:gray">
+A2: 관성에서 고정 좌표계로 이동하기 위한 회전행렬  
 </span>
 </center>  
 
@@ -117,26 +120,34 @@ A2: 관성에서 고정 좌표겨로 이동하기 위한 회전행렬
 ## 3-2. Expansion of The Field B by Talor Series
 
 그럼 다음으로 확장 방정식을 계산해 보자.  
-자기장 $\mathbf{B}$ 와 $\mathbf{B}$ 에서의 구배(Gradient)는 Suspension System(커다란 코일)에 의해 생성이 되며, 따라서 $ [x, y, z] $ 에 대해 정의가 된다. 테일러 급수를 이용하여 전개하면 다음과 같다.  
+자기장 $\mathbf{B}$ 와 $\mathbf{B}$ 에서의 구배(Gradient)는 Suspension System(커다란 코일)에 의해 생성이 되며, 따라서 $ \mathbf{r} = [x, y, z] $ 에 대해 정의가 된다. 테일러 급수를 이용하여 전개한 식을 $ \tilde{\mathbf{B}} $ 라고 하면, 결과는 다음과 같다. 
+
+<center>$$\tilde{\mathbf{B}} = \mathbf{B} + \mathbf{B}' + (1/2)\mathbf{B}''$$</center>
+
+<br/>
+
+그런데 미분하는 대상이 자기장 $ \mathbf{B} $  이다. 자기장은 벡터인데, 즉 벡터를 미분하고 있다. 이는 즉 단위 부피당 자기장의 흐름을 의미하므로, 이는 Divergence를 의미하기에 $ \mathbf{B}' = \frac{\partial \mathbf{B}}{\partial \mathbf{r}} = (\mathbf{r} \cdot \triangledown) \mathbf{B} $ 이므로, 다음과 같이 쓸 수 있다.  
 
 <center>$$\tilde{\mathbf{B}} = \mathbf{B} + (\mathbf{r} \cdot \bigtriangledown)\mathbf{B} + (1/2)(\mathbf{r} \cdot \bigtriangledown)^2 \mathbf{B}$$</center>  
 
 <center>
 <span style=
-"font-size:80%">
+"font-size:80%;
+color:gray">
 A3: 자기장 B를 테일러 급수로 2차까지 전개한 모습 
 </span>
 </center>  
 
 <br/>
 
-A3 식을 벡터 항등식에 의해 다음과 같이 쓸 수 있다. 
+그리고 A3식을 벡터 항등식에 의해 다음과 같이 쓸 수 있다. 
 
 <center>$$\tilde{\mathbf{B}}=\mathbf{B}_i+\frac{\partial \mathbf{B}_i}{\partial \mathbf{r}} \mathbf{r} + (1/2) \mathbf{r}^T \frac{\partial^2 \mathbf{B}_i}{\partial \mathbf{r}^2}\mathbf{r}$$</center>  
 
 <center>
 <span style=
-"font-size:80%">
+"font-size:80%;
+color:gray">
 A4: A3 식을 다른 표현으로 바꾼 모습. 벡터 항등식이라고 해서 특별한 게 아니라 벡터 공식에 의해 다른 표현으로 정리한 것이다.
 </span>
 </center>  
@@ -149,7 +160,8 @@ A4: A3 식을 다른 표현으로 바꾼 모습. 벡터 항등식이라고 해�
 
 <center>
 <span style=
-"font-size:80%">
+"font-size:80%;
+color:gray">
 A5: 자기장 B를 위치벡터 r에 대해 편미분 한 것을 다시 각 축에 대해서 분해한 수식
 </span>
 </center>  
@@ -166,21 +178,161 @@ A5: 자기장 B를 위치벡터 r에 대해 편미분 한 것을 다시 각 축�
 
 <center>
 <span style=
-"font-size:80%">
+"font-size:80%;
+color:gray">
 A6: A5를 미분한 것을 다시 각 축에 대해서 분해한 수식
 </span>
 </center>  
 
 <br/>
 
-그런데 매번 이렇게 적기에는 힘드므로, 논문에서는 $ f_{ij} = \partial f_i / \partial j $, $ f_{(ij)k} =  $
+그런데 매번 이렇게 적기에는 힘드므로, 논문에서는 $ f_{ij} = \partial f_i / \partial j $, $ f_{(ij)k} = \partial(\partial f_i / \partial j) / \partial k $ 로 일반적인 형태로 바꿔 쓰는데, 다음과 같다.  
 
+<center>$$\frac{\partial \mathbf{B}_i}{\partial \mathbf{r}} = \begin{bmatrix}
+\mathbf{B}_{ix} & \mathbf{B}_{iy} & \mathbf{B}_{iz}
+\end{bmatrix}$$</center>
 
+<center>
+<span style=
+"font-size:80%;
+color:gray">
+A7: A5를 일반화한 식
+</span>
+</center>  
 
+<br/>
 
-$$$$
+<center>$$\frac{\partial^2 \mathbf{B}_i}{\partial \mathbf{r}^2} = \begin{bmatrix}
+\mathbf{B}_{(ix)x} & \mathbf{B}_{(ix)y} & \mathbf{B}_{(ix)z} \\ 
+\mathbf{B}_{(iy)x} & \mathbf{B}_{(iy)y} & \mathbf{B}_{(iy)z} \\ 
+\mathbf{B}_{(iz)x} & \mathbf{B}_{(iz)y} & \mathbf{B}_{(iz)z}
+\end{bmatrix}$$</center>
 
-$$ $$
+<center>
+<span style=
+"font-size:80%;
+color:gray">
+A8: A6를 일반화한 식
+</span>
+</center>  
 
-$$$$  
+<br/>
 
+최종적으로 A8식은 다음과 같이 더 간단히 표현이 가능하다. 
+
+<center>$$\frac{\partial^2 \mathbf{B}_i}{\partial \mathbf{r}^2} = \frac{\partial (\partial \mathbf{B}_i / \partial j)}{\partial \mathbf{r}} = \begin{bmatrix}
+\mathbf{B}_{(ij)x} & \mathbf{B}_{(ij)y} & \mathbf{B}_{(ij)z}
+\end{bmatrix}$$  
+</center>
+
+<center>
+<span style=
+"font-size:80%;
+color:gray">
+A10: A8 식을 더 간략화한 수식
+</span>
+</center>  
+
+<br/>
+
+따라서 $ \tilde{\mathbf{B}} $ 의 일차 구배 방정식은 다음과 같이 표현된다.  
+
+<center>$$\tilde{\mathbf{B}}_{ij} = \mathbf{B}_{ij} + \frac{\partial (\partial \mathbf{B}_i / \partial j)}{\partial \mathbf{r}} \mathbf{r}$$  
+</center>
+
+<center>
+<span style=
+"font-size:80%;
+color:gray">
+A9: 자기장의 일차 구배(Gradient)방정식
+</span>
+</center>  
+
+<br/>
+
+## 3-3. Expansion Equation on The Body Frame
+이제 확장 방정식을 Magnet Core의 고정 좌표계로 옮겨보면 다음과 같다.  
+
+<center>$$\overline{\tilde{\mathbf{B}}} = \overline{\mathbf{B}} + (\overline{\mathbf{r}} \cdot \overline{\triangledown}) \overline{\mathbf{B}} + (1/2) (\overline{\mathbf{r}} \cdot \overline{\triangledown})^2 \overline{\mathbf{B}}$$  
+</center>
+
+<center>
+<span style=
+"font-size:80%;
+color:gray">
+A11: 고정좌표계에서의 확장방정식
+</span>
+</center>  
+
+<br/>
+
+그런데 A1에서와 같이 $ \mathbf{r} $ 에 $ \mathbf{T}_m $ 을 곱해주면 $ \overline{\mathbf{r}} $ 이 되는 것을 먼저 정의하였다. 따라서 A11식도 마찬가지로 다음과 같이 생각할 수 있다.  
+
+<center>$$\overline{\mathbf{B}} = [\mathbf{T}_m] \mathbf{B}$$</center>
+<center>$$\overline{\mathbf{\triangledown}} = [\mathbf{T}_m] \mathbf{\triangledown}$$</center>
+
+<br/>
+
+그리고 $ \overline{\mathbf{r}} = [\mathbf{T}_m] \mathbf{r} $ 에서 반대로 $ \mathbf{r} $ 를 구하려면 다음과 같이 쓸 수 있다.  
+
+<center>$$\mathbf{r} = [\mathbf{T}_m]^T \overline{\mathbf{r}}$$</center>
+
+<center>
+<span style=
+"font-size:80%;
+color:gray">
+A12: A1에서 r을 유도하는 수식
+</span>
+</center>  
+
+<br/>
+
+따라서 A12식에 의해 A4식을 다시 쓰면,  
+
+<center>$$\tilde{\mathbf{B}}_i = \mathbf{B}_i + \frac{\partial \mathbf{B}_i}{\partial \mathbf{r}} [\mathbf{T}_m]^T \overline{\mathbf{r}} + (1/2) \overline{\mathbf{r}}^T [\mathbf{T}_m] \frac{\partial^2 \mathbf{B}_i}{\partial \mathbf{r}^2} [\mathbf{T}_m]^T \overline{\mathbf{r}}$$</center>  
+
+<center>
+<span style=
+"font-size:80%;
+color:gray">
+A13: A4식에 A12를 대입한 모습
+</span>
+</center>  
+
+<br/>
+
+이는 고정좌표계(Magnetic Core)에서의 자기장 성분을 관성좌표계(Suspension System)로 확장할 수 있음을 보여준다. 즉 해당 확장방정식이 수식적으로 시스템에 온전히 적용이 된다는 것을 의미한다. 따라서 A13식에 $ \mathbf{T}_m $ 을 곱해주면 고정좌표계(Magnetic Core)에서의 확장방정식이 완성된다.  
+
+<center>$$\overline{\tilde{\mathbf{B}}} = [\mathbf{T}_m] \begin{bmatrix}
+[\mathbf{B}_x + \frac{\partial \mathbf{B}_x}{\partial \mathbf{r}} [\mathbf{T}_m]^T \overline{\mathbf{r}} + (1/2) \overline{\mathbf{r}}^T [\mathbf{T}_m] \frac{\partial^2 \mathbf{B}_x}{\partial \mathbf{r}^2} [\mathbf{T}_m]^T \overline{\mathbf{r}}] \\ 
+[\mathbf{B}_y + \frac{\partial \mathbf{B}_y}{\partial \mathbf{r}} [\mathbf{T}_m]^T \overline{\mathbf{r}} + (1/2) \overline{\mathbf{r}}^T [\mathbf{T}_m] \frac{\partial^2 \mathbf{B}_y}{\partial \mathbf{r}^2} [\mathbf{T}_m]^T \overline{\mathbf{r}}] \\ 
+[\mathbf{B}_z + \frac{\partial \mathbf{B}_z}{\partial \mathbf{r}} [\mathbf{T}_m]^T \overline{\mathbf{r}} + (1/2) \overline{\mathbf{r}}^T [\mathbf{T}_m] \frac{\partial^2 \mathbf{B}_z}{\partial \mathbf{r}^2} [\mathbf{T}_m]^T \overline{\mathbf{r}}] 
+\end{bmatrix}$$</center>
+
+<center>
+<span style=
+"font-size:80%;
+color:gray">
+A14: A13식을 다시 고정좌표계로 이동한 모습
+</span>
+</center>  
+
+<br/>
+
+여기에 추가로 Small-Angle Assumption을 적용하여 각을 0으로 근사시키면 $ sin \theta = 0, cos \theta = 1 $ 이 되어 $ \mathbf{T}_m $ 을 다음과 같이 쓸 수 있다.  
+
+<center>$$[\mathbf{T}_m] = \begin{bmatrix}
+1 & \theta_z & - \theta_y \\ 
+- \theta_z & 1 & \theta_x \\ 
+\theta_y & - \theta_x & 1
+\end{bmatrix}$$</center>
+
+<center>
+<span style=
+"font-size:80%;
+color:gray">
+A15: A2를 간단히 바꾼 모습
+</span>
+</center>  
+
+<br/>
