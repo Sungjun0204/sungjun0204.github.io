@@ -1,5 +1,5 @@
 ---
-title: "[Magnetic Robot Lab] 2. Paper Review (1)"
+title: "[Magnetic Robot Lab] 2. Paper Review 1(1)"
 excerpt: "Title: Expanded Equations for Torque and Force on a Cylindrical Permanent Magnet Core in a Large-Gap Magnetic Suspension System"
 header: 
     teaser: \assets\images\me.png
@@ -15,7 +15,7 @@ toc_sticky: true
 use_math: true
 ---
 
-<br/><br/>
+<br/>
 
 >앞으로 내가 해당 랩실에서 구현할 시스템의 이론적 근본이 되는 논문에 대한 리뷰이다. 코일로 구성된 자기장 생성 시스템에서의 자석 로봇의 움직임 제어(x, y, z, roll, pitch, yaw)에 대해 수식적으로 가능하다는 것을 논하고 있다. 자석 로봇을 제어하기 위한 시스템의 매우매우 기초적인 내용이라 결과만 알고 있어도 문제될 것은 없지만, 잘 알아두면 좋을 것이다.  
 
@@ -29,9 +29,17 @@ use_math: true
 * 저자: Nelson J. Groom (NASA)
 * 날짜: 1997.02  
 
-* 주제: 기존 자기장 발생 시스템에서는 로봇을 5자유도(x, y, z, pitch, yaw)으로만 움직일 수 있었으나, 자기장 식을 테일러 급수를 통해 2차까지 확장하여 사용하게 되면 6자유도(x, y, z, roll, pitch, yaw), 즉 모든 방향으로 제어가 가능하다고 말하고 있다. 
+* 주제: 기존 자기장 발생 시스템에서는 로봇을 5자유도(x, y, z, pitch, yaw)으로만 움직일 수 있었으나, 자기장 식을 테일러 급수를 통해 2차까지 확장한 다음, 자화 방향을 대칭축이 아닌 Magnetic Core와 수직하게 걸게 되면 6자유도(x, y, z, roll, pitch, yaw), 즉 모든 방향으로 제어가 가능하다고 말하고 있다. 
 
 <br/><br/><br/>
+
+
+
+
+
+
+
+
 
 # 2. Introduction
 해당 논문에서는 제어할 자석 로봇을 "Cylindrical Permanent Magnet Core(원통형 영구자석 코어)"라고 부르고, 해당 자석을 움직이게 할 장소(field)를 "Large-Gap Magnetic Suspension System"(결국 커다란 코일을 의미한다)이라고 부르고 있다. 결국 커다란 코일 안에 자석 로봇을 넣어 로봇을 움직이게 하는 것인데, 이를 일반화하기 위해 이런 식으로 말하는 것 같다. 자석 로봇도 단순히 "자석 코어"라고 말하고 있는데, 아마 일정하게 자화가 된다고 가정을 하므로 단순한 원통형 자석을 기준으로 설명을 하는 것 같다.  
@@ -70,6 +78,16 @@ color:gray">
 
 <br/><br/><br/>
 
+
+
+
+
+
+
+
+
+
+
 # 3. Appendix A
 : Expansion of Fields and Gradients About The Nomial Operating Point of a Cylindrical Permanent Magnet Core
 (Cylindrical Permanent Magnet Core의 통칭 작용점에 대한 자기장과 구배의 확장 방정식)  
@@ -77,6 +95,10 @@ color:gray">
 해당 부록에서는 테일러 급수를 이용해 자기장과 구배의 확장을 전개를 설명하게 된다. 테일러 급수를 전개해야 하므로 해당 논문에서는 자기장이 적절히 2차 이상 전개된다 가정하고 시작한다.  
 
 <br/>
+
+
+
+
 
 ## 3-1. Transformation of Frame
 
@@ -116,6 +138,10 @@ A2: 관성에서 고정 좌표계로 이동하기 위한 회전행렬
 참고로 논문에 적힌 A2에 오타가 있다. 위 식은 내가 직접 계산한 행렬식인데, 어려울 것도 없고 그냥 단순 행렬 곱 계산이다. 그리고 논문에서는 sin, cos을 간편하게 s, c로 줄여 쓰는데, 여기 포스팅에서도 동일하게 표기하겠다. 어쨌든 이게 중요한 건 아니니까 바로 다음 단계로 넘어가자. 
 
 <br/>
+
+
+
+
 
 ## 3-2. Expansion of The Field B by Talor Series
 
@@ -250,6 +276,9 @@ A9: 자기장의 일차 구배(Gradient)방정식
 
 <br/>
 
+
+
+
 ## 3-3. Expansion Equation on The Body Frame
 이제 확장 방정식을 Magnet Core의 고정 좌표계로 옮겨보면 다음과 같다.  
 
@@ -319,7 +348,7 @@ A14: A13식을 다시 고정좌표계로 이동한 모습
 
 <br/>
 
-여기에 추가로 Small-Angle Assumption을 적용하여 각을 0으로 근사시키면 $ sin \theta = 0, cos \theta = 1 $ 이 되어 $ \mathbf{T}_m $ 을 다음과 같이 쓸 수 있다.  
+여기에 추가로 Small-Angle Assumption을 적용하여 각을 0으로 근사시키면 $ sin \theta = \theta, cos \theta = 1 $ 이 되어 $ \mathbf{T}_m $ 을 다음과 같이 쓸 수 있다.  
 
 <center>$$[\mathbf{T}_m] = \begin{bmatrix}
 1 & \theta_z & - \theta_y \\ 
@@ -335,4 +364,7 @@ A15: A2를 간단히 바꾼 모습
 </span>
 </center>  
 
-<br/>
+<br/><br/><br/>
+
+
+다음에 계속...
