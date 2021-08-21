@@ -6,7 +6,7 @@ header:
 
 categories: 
     - Magnetic Robot Laboratory
-tage: 
+tags: 
     - magnetic robot lab
 last_modified_at: 2021-07-08t12:58-15:00
 comments: true

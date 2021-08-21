@@ -1,14 +1,14 @@
 ---
 title: "[Magnetic Robot Lab] 2. Paper Review 1(1)"
-excerpt: "Title: Expanded Equations for Torque and Force on a Cylindrical Permanent Magnet Core in a Large-Gap Magnetic Suspension System"
+excerpt: "Expanded Equations for Torque and Force on a Cylindrical Permanent Magnet Core in a Large-Gap Magnetic Suspension System"
 header: 
     teaser: \assets\images\me.png
 
 categories: 
     - Magnetic Robot Laboratory
-tage: 
+tags: 
     - magnetic robot lab
-last_modified_at: 2021-07-08t12:58-15:00
+last_modified_at: 2021-08-14t13:00-23:00
 comments: true
 toc: true
 toc_sticky: true
@@ -167,6 +167,8 @@ A3: 자기장 B를 테일러 급수로 2차까지 전개한 모습
 <br/>
 
 그리고 A3식을 벡터 항등식에 의해 다음과 같이 쓸 수 있다. 
+
+
 
 <center>$$\tilde{\mathbf{B}}=\mathbf{B}_i+\frac{\partial \mathbf{B}_i}{\partial \mathbf{r}} \mathbf{r} + (1/2) \mathbf{r}^T \frac{\partial^2 \mathbf{B}_i}{\partial \mathbf{r}^2}\mathbf{r}$$</center>  
 
