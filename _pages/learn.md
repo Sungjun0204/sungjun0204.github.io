@@ -12,3 +12,8 @@ taxonomy: Learn
 * [Automatic Control(자동제어)](/categories/learn/automatic-control)  
 * [Robot Kinematics(로봇운동학)](/categories/learn/robot-kinematics)  
 * [Robot Laboratory 3(로봇학실험3)](/categories/learn/robot-laboratory-3)  
+
+<br/>
+
+* [Robot Laboratory 4(로봇학실험4)](/categories/learn/robot-laboratory-4)
+
