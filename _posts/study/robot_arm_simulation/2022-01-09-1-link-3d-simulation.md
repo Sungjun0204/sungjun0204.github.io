@@ -1,6 +1,6 @@
 ---
-title: "[Robot Arm Simulation] 1. 1Link Simulation on 3D"
-excerpt: "The Magnetic Robot Laboratory"
+title: "[Robot Arm Simulation] 1. 1-Link Simulation on 3D"
+excerpt: "1-Link Robot Arm Simulation on 3D"
 header: 
     teaser: \assets\images\me.png
 
