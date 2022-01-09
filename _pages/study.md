@@ -14,3 +14,8 @@ taxonomy: Study
 
 광운대학교 자석 로봇 연구실에서 공부한 내용 정리  
 [>> Read the posts(Click here)](/categories/study/magnetic-robot-lab) 
+
+<br/>
+
+로봇 팔 시뮬레이션 내용 정리(with MATLAB)
+[>> Read the posts(Click here)](/categories/study/robot-arm-simulation) 
