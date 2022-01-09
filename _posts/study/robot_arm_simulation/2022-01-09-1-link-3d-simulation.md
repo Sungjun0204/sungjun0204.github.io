@@ -26,7 +26,7 @@ MATLAB으로 로봇 팔을 시뮬레이션을 하기 위해서는 먼저 링크�
 다음과 같이 3차원 좌표계에서 링크가 있다고 해 보자.  
 
 <center>
-<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img1.PNG" width="50%" height="50%">
+<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img1.png" width="50%" height="50%">
 </center>
 
 <center>
@@ -42,7 +42,7 @@ color:gray">
 이때, 직선 $\overline{OP}$의 길이를 $l$이라고 하고, $x$축 기준으로 $q$도, $xy$평면과는 $r$도 떨어져 있다고 하자. 그렇다면 직선 $\overline{OQ}$는 직선 $\overline{OP}$을 $r$도 만큼 사영을 시킨 길이이므로, $l·cos(r)$가 됨을 알 수 있다.  
 
 <center>
-<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img2.PNG" width="50%" height="50%">
+<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img2.png" width="50%" height="50%">
 </center>
 
 <center>
@@ -75,7 +75,7 @@ color:gray">
 <br/><br/>
 
 <center>
-<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img3.PNG" width="50%" height="50%">
+<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img3.png" width="50%" height="50%">
 </center>
 
 <center>
@@ -107,7 +107,7 @@ color:gray">
 <br/><br/>
 
 <center>
-<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img4.PNG" width="50%" height="50%">
+<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img4.png" width="50%" height="50%">
 </center>
 
 <center>
@@ -214,7 +214,7 @@ drawnow
 따라서 해당 코드를 시뮬레이션 돌리면 다음과 같다.  
 
 <center>
-<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img5.PNG" width="50%" height="50%">
+<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img5.png" width="50%" height="50%">
 </center>
 
 <center>
@@ -230,7 +230,7 @@ color:gray">
 여기서 3D로 움직일 수 있는 버튼을 누르고 마우스로 움직이면 다음과 같이 3차원 상의 링크가 그려지는 모습을 볼 수 있다.  
 
 <center>
-<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img6.PNG" width="10%" height="10%">
+<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img6.png" width="10%" height="10%">
 </center>
 
 <center>
@@ -244,7 +244,7 @@ color:gray">
 <br/>
 
 <center>
-<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img7.PNG" width="50%" height="50%">
+<img src="\assets\images\study\robot_arm_simulation\2022-01-09-1-link-3d-simulation\img7.png" width="50%" height="50%">
 </center>
 
 <center>
