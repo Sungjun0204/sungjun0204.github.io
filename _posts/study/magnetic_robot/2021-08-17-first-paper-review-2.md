@@ -163,7 +163,7 @@ $ \triangledown (\mathbf{r} \cdot \mathbf{B}) $ 의 경우, 벡터 항등식에 
 
 <br/>
 
-그런데 우리는 Maxwell의 4대 방정식에서, $ \triangledown \times \mathbf{B} = \triangledown \cdot \mathbf{B} = 0 $ 임을 알고 있다. 또한 Position Vector $ \mathbf{r} $ 의 divergence는 상수이고, Curl은 0이기에, $ \mathbf{T} $ 는 다음과 같이 쓸 수 있다.  
+그런데 우리는 Maxwell의 4대 방정식에서, $ \triangledown \times \mathbf{B} = \triangledown \cdot \mathbf{B} = 0 $ 임을 알고 있다($ \triangledown \times \mathbf{B} = 0 $ 은 원래 0이 아니다. 원래는 $ \triangledown \times \mathbf{B}=\mu_0 \mathbf{J}+\varepsilon_0\mu_0\frac{\partial \mathbf{E}}{\partial t} $ 이나, 자석에는 전류가 흐르지 않으므로 $ \mathbf{J} $ 와 $ \mathbf{E} $ 가 0이므로 $ \triangledown \times \mathbf{B} = 0 $ 이 성립한다). 또한 Position Vector $ \mathbf{r} $ 의 divergence는 상수이고, Curl은 0이기에, $ \mathbf{T} $ 는 다음과 같이 쓸 수 있다.  
 
 <center>$$\mathbf{T} = I \int_{s} (d \mathbf{A} \times \mathbf{B})$$</center>
 
